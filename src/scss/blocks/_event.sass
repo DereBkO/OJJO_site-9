@@ -1,0 +1,143 @@
+.event
+	padding: 100px 0 710px 0
+
+.event__title
+	font-family: Gilroy
+	font-weight: 400
+	font-size: 21px
+	line-height: 140%
+	text-align: center
+	color: #333
+
+.event__subtitle
+	margin-top: 15px
+	font-family: NotoSerif
+	font-weight: 700
+	font-size: 30px
+	line-height: 41px
+	text-align: center
+	color: #333
+
+
+// ---------------  Tabs  -----------------
+
+
+.event__tabattachment
+	margin-top: 60px
+
+.event__tabs
+	display: flex
+	justify-content: space-between
+
+.tab
+	cursor: pointer
+	.rectangle
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		z-index: 10
+		width: 165px
+		height: 55px
+		background: #f9f9f9
+		border: 1px solid #d6d6d6
+		font-family: Gilroy
+		font-weight: 500
+		font-size: 18px
+		line-height: 21px
+		letter-spacing: 0.1em
+		text-transform: uppercase
+		color: #333
+		pointer-events: none
+		transition: 0.5s
+		&:last-child
+			position: relative
+			z-index: 0
+			margin-top: -49px
+			margin-left: 6px
+	&:hover
+		.rectangle
+			background: #333
+			width: 171px
+			height: 61px
+			color: #fff
+			&:last-child
+				margin-top: -61px
+				margin-left: 0px
+
+.tab__active
+	.rectangle
+		background: #333
+		width: 171px
+		height: 61px
+		color: #fff
+		&:last-child
+			margin-top: -61px
+			margin-left: 0px
+
+
+// ---------------  Attachment  ------------
+
+
+.event__attachment
+	position: relative
+	margin-top: 55px
+
+.attachment
+	position: absolute
+	opacity: 0
+	transform: scale(0.6)
+	// box-shadow: 0px 0px 60px 82px rgba(0, 0, 0, 0.5) inset
+
+.attachment__active
+	position: absolute
+	opacity: 1
+	overflow: hidden
+	transition: transform 1.1s ease-out
+	transform: scale(1)
+
+.attachment__content
+	display: flex
+	justify-content: space-between
+	gap: 30px
+	&:last-child
+		margin-top: 30px
+
+.range-up
+	position: relative
+	width: 350px
+	height: 280px
+	&:nth-child(1)
+		background: url('@img/icons/rings.png') center (center / cover) no-repeat
+
+	&:nth-child(2)
+		background: url('@img/icons/earrings.png') center (center / cover) no-repeat
+
+	&:nth-child(3)
+		background: url('@img/icons/pendants.png') center (center / cover) no-repeat
+
+.range-down
+	position: relative
+	width: 350px
+	height: 280px
+	&:nth-child(1)
+		background: url('@img/icons/cufflinks.png') center (center / cover) no-repeat
+
+	&:nth-child(2)
+		background: url('@img/icons/bracelets.png') center (center / cover) no-repeat
+
+	&:nth-child(3)
+		background: url('@img/icons/watch.png') center (center / cover) no-repeat
+
+.attachment__title
+	position: absolute
+	left: 50%
+	bottom: 30px
+	transform: translateX(-50%)
+	font-family: Gilroy
+	font-weight: 500
+	font-size: 24px
+	line-height: 28px
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	color: #fff

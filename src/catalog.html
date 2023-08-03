@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		@@include('html/header.html')
+		<main>
+			<!-- Чтобы прокрутиться к определенному блоку, надо к section добавить id -->
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="catalog__content">
+                        <div class="catalog__filter">
+                            <div class="filter__item">
+                                <div class="filter__name">
+                                    <div class="filter__block">
+                                        <div class="filter__text">Бренд</div>
+                                        <img src="@img/icons/filter_triangle.svg" alt="triangle" class="filter__triangle">
+                                    </div>
+
+                                    <ul class="filter__choose">
+                                        <li class="filter__paragraph">Dolce & Gabanna</li>
+                                        <li class="filter__paragraph">Gucci</li>
+                                        <li class="filter__paragraph">Louis Vuitton</li>
+                                    </ul>
+                                </div>
+                                <div class="filter__line"></div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__name">
+                                    <div class="filter__block">
+                                        <div class="filter__text">Цена</div>
+                                        <img src="@img/icons/filter_triangle.svg" alt="triangle" class="filter__triangle">
+                                    </div>
+
+                                    <ul class="filter__choose">
+                                        <li class="filter__paragraph">175 000 ₽</li>
+                                        <li class="filter__paragraph">175 000 ₽</li>
+                                        <li class="filter__paragraph">175 000 ₽</li>
+                                    </ul>
+                                </div>
+                                <div class="filter__line"></div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__name">
+                                    <div class="filter__block">
+                                        <div class="filter__text">Для кого</div>
+                                        <img src="@img/icons/filter_triangle.svg" alt="triangle" class="filter__triangle">
+                                    </div>
+
+                                    <ul class="filter__choose">
+                                        <li class="filter__paragraph">Мужу</li>
+                                        <li class="filter__paragraph">Жене</li>
+                                    </ul>
+                                </div>
+                                <div class="filter__line"></div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__name">
+                                    <div class="filter__block">
+                                        <div class="filter__text">Коллекция</div>
+                                        <img src="@img/icons/filter_triangle.svg" alt="triangle" class="filter__triangle">
+                                    </div>
+
+                                    <ul class="filter__choose">
+                                        <li class="filter__paragraph">Diamond</li>
+                                        <li class="filter__paragraph">Gold</li>
+                                        <li class="filter__paragraph">Sapphire</li>
+                                    </ul>
+                                </div>
+                                <div class="filter__line"></div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__name">
+                                    <div class="filter__block">
+                                        <div class="filter__text">Сезон</div>
+                                        <img src="@img/icons/filter_triangle.svg" alt="triangle" class="filter__triangle">
+                                    </div>
+
+                                    <ul class="filter__choose">
+                                        <li class="filter__paragraph">Зима</li>
+                                        <li class="filter__paragraph">Весна</li>
+                                        <li class="filter__paragraph">Лето</li>
+                                        <li class="filter__paragraph">Осень</li>
+                                    </ul>
+                                </div>
+                                <div class="filter__line"></div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__name">
+                                    <div class="filter__block">
+                                        <div class="filter__text">Событие</div>
+                                        <img src="@img/icons/filter_triangle.svg" alt="triangle" class="filter__triangle">
+                                    </div>
+
+                                    <ul class="filter__choose">
+                                        <li class="filter__paragraph">Свадьба</li>
+                                        <li class="filter__paragraph">Годовщина</li>
+                                        <li class="filter__paragraph">День рождение</li>
+                                    </ul>
+                                </div>
+                                <div class="filter__line"></div>
+                            </div>
+                        </div>
+
+                        <div class="catalog__ctlg">
+                            <div class="catalog__item">
+                                <a href="card.html"><img src="@img/img/pillow.png" alt="rings" class="catalog__img"></a>
+                                <div class="catalog__subtitle">Подвеска</div>
+                                <a href="card.html"><div class="catalog__title">Dolce & Gabanna</div></a>
+                                <div class="catalog__price">175 000 ₽</div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="card.html"><img src="@img/img/pillow.png" alt="rings" class="catalog__img"></a>
+                                <div class="catalog__subtitle">Подвеска</div>
+                                <a href="card.html"><div class="catalog__title">Dolce & Gabanna</div></a>
+                                <div class="catalog__price">175 000 ₽</div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="card.html"><img src="@img/img/pillow.png" alt="rings" class="catalog__img"></a>
+                                <div class="catalog__subtitle">Подвеска</div>
+                                <a href="card.html"><div class="catalog__title">Dolce & Gabanna</div></a>
+                                <div class="catalog__price">175 000 ₽</div>
+                            </div>
+                        </div>
+                        
+                        <div class="catalog__line"></div>
+
+                        <div class="catalog__ctlg">
+                            <div class="catalog__item">
+                                <a href="card.html"><img src="@img/img/pillow.png" alt="rings" class="catalog__img"></a>
+                                <div class="catalog__subtitle">Подвеска</div>
+                                <a href="card.html"><div class="catalog__title">Dolce & Gabanna</div></a>
+                                <div class="catalog__price">175 000 ₽</div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="card.html"><img src="@img/img/pillow.png" alt="rings" class="catalog__img"></a>
+                                <div class="catalog__subtitle">Подвеска</div>
+                                <a href="card.html"><div class="catalog__title">Dolce & Gabanna</div></a>
+                                <div class="catalog__price">175 000 ₽</div>
+                            </div>
+                            <div class="catalog__item">
+                                <a href="card.html"><img src="@img/img/pillow.png" alt="rings" class="catalog__img"></a>
+                                <div class="catalog__subtitle">Подвеска</div>
+                                <a href="card.html"><div class="catalog__title">Dolce & Gabanna</div></a>
+                                <div class="catalog__price">175 000 ₽</div>
+                            </div>
+                        </div>
+
+                        <button class="catalog__btn">покажите еще</button>
+                    </div>
+                </div>
+            </section>
+
+			<section class="adviсe">
+				<div class="container">
+					<div class="advice__content">
+						<h1 class="advice__title">Полезные советы и персональный предложения</h1>
+						<h2 class="advice__subtitle">Эксклюзивная рассылка</h2>
+
+						<div class="advice__block">
+							<ul class="advice__text">
+								<li class="advice__link"><img src="@img/icons/triangle.svg" alt="triangle">Личный менеджер</li>
+								<li class="advice__link"><img src="@img/icons/triangle.svg" alt="triangle">Доставка и оформление</li>
+								<li class="advice__link"><img src="@img/icons/triangle.svg" alt="triangle">Индивидуальный дизайн</li>
+							</ul>
+
+							<div class="advice__line">
+								<form action="" class="advice__email">
+									<input type="email" name="email" placeholder="Ваш e-mail" class="email">
+									<input type="submit" value="отправить" class="send">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html')
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

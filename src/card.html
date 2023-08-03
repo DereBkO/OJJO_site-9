@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		@@include('html/header.html')
+		<main>
+			<!-- Чтобы прокрутиться к определенному блоку, надо к section добавить id -->
+
+            <section class="card">
+                <div class="container">
+                    <div class="card__content">
+                        <div class="card__repository">
+                            <a href="index.html" class="map__link">Главная</a>
+                            <div class="map__slesh">/</div>
+                            <a href="catalog.html" class="map__link">Каталог</a>
+                            <div class="map__slesh">/</div>
+                            <a href="catalog.html" class="map__link">Категория</a>
+                            <div class="map__slesh">/</div>
+                            <div class="map__link-map">Подвеска Dolce & Gabarra</div>
+                        </div>
+
+                        <!-- Slider main container -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@img/img/pillow_2.png" alt="rings">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="adviсe">
+				<div class="container">
+					<div class="advice__content">
+						<h1 class="advice__title">Полезные советы и персональный предложения</h1>
+						<h2 class="advice__subtitle">Эксклюзивная рассылка</h2>
+
+						<div class="advice__block">
+							<ul class="advice__text">
+								<li class="advice__link"><img src="@img/icons/triangle.svg" alt="triangle">Личный менеджер</li>
+								<li class="advice__link"><img src="@img/icons/triangle.svg" alt="triangle">Доставка и оформление</li>
+								<li class="advice__link"><img src="@img/icons/triangle.svg" alt="triangle">Индивидуальный дизайн</li>
+							</ul>
+
+							<div class="advice__line">
+								<form action="" class="advice__email">
+									<input type="email" name="email" placeholder="Ваш e-mail" class="email">
+									<input type="submit" value="отправить" class="send">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/footer.html')
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

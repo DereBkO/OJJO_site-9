@@ -1,0 +1,65 @@
+@import "fonts"
+@import "blocks/header"
+@import "catalog/header_catalog"
+@import "blocks/promo"
+@import "blocks/event"
+@import "blocks/choose"
+@import "blocks/articles"
+@import "blocks/advice"
+@import "blocks/footer"
+@import "catalog/catalog"
+@import "map/map"
+@import "card/card"
+
+
+
+*
+	font-family: "Gilroy", "NotoSerif", sans-serif
+	margin: 0
+	padding: 0
+	border: 0
+	box-sizing: border-box
+	&::before
+		margin: 0
+		padding: 0
+		border: 0
+		box-sizing: border-box
+	&::after
+		margin: 0
+		padding: 0
+		border: 0
+		box-sizing: border-box
+
+a
+	text-decoration: none
+
+ul
+	list-style: none
+
+ol
+	list-style: none
+
+li
+	list-style: none
+
+img
+	vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+	font-size: normal
+
+body, html
+	height: 100%
+	line-height: 1
+	font-size: 16px
+	background-color: #F9F9F9
+	color: #000
+
+body
+	&.lock
+		overflow: hidden // Это нужно чтобы не работал скролл на главной странице
+
+.container
+	max-width: 1110px
+	margin: 0 auto

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Главная"
+	})
+	<body>
+		@@include('html/header.html')
+		<main>
+			<!-- Чтобы прокрутиться к определенному блоку, надо к section добавить id -->
+
+            <section class="map">
+                <div class="container">
+                    <div class="map__content">
+                        <div class="map__repository">
+                            <a href="index.html" class="map__link">Главная</a>
+                            <div class="map__slesh">/</div>
+                            <div class="map__link-map">Контакты</div>
+                        </div>
+
+                        <div class="map__contactstitle">Контакты</div>
+
+                        <div class="map__contacts">
+                            <div class="contacts__item">
+                                <div class="contacts__title">Главный офис</div>
+                                <div class="contacts__descr metka">Невский 140, офис 1-5</div>
+                                <div class="contacts__descr">Невский 140, офис 1-5</div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__title">Телефоны</div>
+                                <div class="contacts__descr phone_2">8 (812) 458-56-45</div>
+                                <div class="contacts__descr">8-911-878-00-00</div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__title">E-mail</div>
+                                <div class="contacts__descr email_2">office@ojjo.com</div>
+                                <div class="contacts__descr">sales@ojjo.com</div>
+                            </div>
+                            <div class="contacts__item">
+                                <div class="contacts__title">Доп. адреса</div>
+                                <div class="contacts__descr metka">Невский 142, офис 1-5</div>
+                                <div class="contacts__descr">Загородный 145, офис 11-15</div>
+                            </div>
+                        </div>
+
+                        <div class="map__line"></div>
+
+                        <img src="@img/img/maps.png" alt="maps" class="maps">
+                    </div>
+                </div>
+            </section>
+		</main>
+		@@include('html/footer.html')
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

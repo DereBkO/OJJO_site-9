@@ -1,0 +1,144 @@
+.catalog
+	padding: 100px 0 150px 0
+
+// --------------  Filter  ---------------
+
+.catalog__filter
+	display: flex
+	justify-content: space-between
+
+.filter__name
+	position: relative
+	cursor: pointer
+	user-select: none
+
+.filter__block
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.filter__choose
+	padding: 10px
+	position: absolute
+	width: 100%
+	background: #F9F9F9
+	border: 1px solid #D6D6D6
+	border-top-style: none
+	transition: all 0.3s ease 0s
+	opacity: 0
+	visibility: hidden
+	pointer-events: none
+
+.filter__block_active
+	.filter__triangle
+		transform: rotate(180deg)
+		
+.filter__choose_active
+	opacity: 1
+	visibility: visible
+	pointer-events: all
+
+.filter__paragraph
+	margin-top: 7px
+	font-family: Gilroy
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+	color: #333333
+	cursor: pointer
+	user-select: none
+	&:first-child
+		margin-top: 0px
+	&:hover
+		color: #979797
+
+.filter__text
+	font-family: Gilroy
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+	color: #333333
+	user-select: none
+
+.filter__triangle
+	transition: 0.3s
+	user-select: none
+
+.filter__line
+	margin-top: 10px
+	width: 160px
+	border: 1px solid #D6D6D6
+
+// ----------------  Catalog  -----------------
+
+.catalog__ctlg
+	margin-top: 60px
+	display: flex
+	justify-content: space-between
+
+.catalog__item
+	padding: 35px
+	border: 1px solid #F9F9F9
+	&:hover
+		border: 1px solid #D6D6D6
+
+.catalog__subtitle
+	margin-top: 25px
+	font-family: Gilroy
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+	text-align: center
+	color: #333333
+
+.catalog__title
+	margin-top: 10px
+	font-family: Gilroy
+	font-weight: 600
+	font-size: 24px
+	line-height: 140%
+	text-align: center
+	color: #333333
+
+.catalog__price
+	display: flex
+	justify-content: center
+	align-items: center
+	margin: 15px auto 0 auto
+	width: 125px
+	height: 41px
+	background: #333333
+	border: 1px solid #FFFFFF
+	font-family: Gilroy
+	font-weight: 400
+	font-size: 18px
+	line-height: 21px
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	color: #FFFFFF
+
+.catalog__line
+	margin-top: 60px
+	width: 100%
+	border: 1px solid #D6D6D6
+
+.catalog__btn
+	display: block
+	margin: 75px auto 0 auto
+	width: 227px
+	height: 51px
+	background: #333333
+	border: 1px solid #FFFFFF
+	font-family: Gilroy
+	font-weight: 500
+	font-size: 18px
+	line-height: 21px
+	text-align: center
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	color: #FFFFFF
+	cursor: pointer
+	transition: 0.3s
+	&:hover
+		background: #979797
